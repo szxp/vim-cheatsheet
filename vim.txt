@@ -25,7 +25,7 @@ Ctrl-I		Jump forward
 Editing
 u		Undo
 U		Undo the whole line
-Ctrl-r		Redo
+Ctrl-R		Redo
 i		Insert before the current character
 I		Insert at the beginning of the line
 a		Append after the current character
