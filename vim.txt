@@ -15,7 +15,8 @@ b		Beginning of the word
 3b		Beginning of the third word backward
 e		End of the word before the last character
 3e		End of the third word forward before the last character
-0 or ^		Beginning of the line
+0 		Beginning of the line
+^ or _		First non blank character in the line
 $		End of line
 gg		Jump to the beginning of the file
 G		Jump to the end of the file
@@ -35,13 +36,24 @@ O		Insert a new line before the current line
 x		Delete the current character 
 dw		Delete until the start of the next word
 d2w		Delete until the start of the second word forward
+daw		Delete the whole word and keeps trailing whitespaces
+diw		Delete the whole word, keeps trailing whitespaces
 de		Delete to the end of the current word
-d0 or d$	Delete to the end of the line
+d$		Delete the rest of the line
+d0		Delete to the end of the line
+d^		Delete to the first non blank character in the line
 dd		Delete the current line
 2dd		Delete two lines
 p		Put previously deleted text after the cursor
 rx		Replace current character to x
-ce		Change to the end of the word
+ce or cw	Change to the end of the word, keeps trailing whitespaces
+caw		Change the whole word and trailing whitespaces
+ciw		Change the whole word, keeps trailing whitespaces
+cc		Change the whole line
+c$		Change the rest of the line
+c0		Change to the beginning of the line 
+c^		Change to the first non blank character in the line
+
 
 
 Troubleshouting
