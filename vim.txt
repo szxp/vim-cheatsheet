@@ -39,6 +39,7 @@ de		Delete to the end of the current word
 d0 or d$	Delete to the end of the line
 dd		Delete the current line
 2dd		Delete two lines
+p		Put previously deleted text after the cursor
 rx		Replace current character to x
 ce		Change to the end of the word
 
