@@ -19,8 +19,8 @@ e		End of the word before the last character
 $		End of line
 gg		Jump to the beginning of the file
 G		Jump to the end of the file
-Ctrl-o		Jump backward
-Ctrl-i		Jump forward
+Ctrl-O		Jump backward
+Ctrl-I		Jump forward
 
 Editing
 u		Undo
@@ -47,7 +47,7 @@ Troubleshouting
 
 Who rebounds your key where.
 :verbose nmap <C-]>
-:nnoremap <C-ú> <C-]>
+:nnoremap <C-Ú> <C-]>
 
 Help
 :help mapping
