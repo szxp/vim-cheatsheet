@@ -1,0 +1,58 @@
+Exit
+:q!	Exit without saving changes
+:q	Exit
+:wq	Save changes and exit
+
+Navigation
+h,j,k,l		Move the cursor left, down, up, right
+2h		Move the cursor left two backward
+3j		Move the cursor down three forward
+4k		Move the cursor up four backward
+5l		Move the cursor right five characters forward
+w		Beginning of the next word
+3w		Beginning of the third word forward
+b		Beginning of the word
+3b		Beginning of the third word backward
+e		End of the word before the last character
+3e		End of the third word forward before the last character
+0 or ^		Beginning of the line
+$		End of line
+gg		Jump to the beginning of the file
+G		Jump to the end of the file
+Ctrl-o		Jump backward
+Ctrl-i		Jump forward
+
+Editing
+u		Undo
+Ctrl-r		Redo
+i		Insert before the current character
+I		Insert at the beginning of the line
+a		Append after the current character
+A		Append to the end of line
+o		Insert a new line after the current line
+O		Insert a new line before the current line
+x		Delete the current character 
+dw		Delete until the start of the next word
+de		Delete to the end of the current word
+d0 or d$	Delete to the end of the line
+rx		Replace current character to x
+ce		Change to the end of the word
+
+
+Troubleshouting
+
+Who rebounds your key where.
+:verbose nmap <C-]>
+:nnoremap <C-ú> <C-]>
+
+Help
+:help mapping
+:help :verbose
+:help :noremap
+
+:set compatible?
+:scriptnames
+
+The --clean argument makes sure Vim is started with nice defaults.
+vim --clean
+
