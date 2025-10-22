@@ -24,6 +24,7 @@ Ctrl-i		Jump forward
 
 Editing
 u		Undo
+U		Undo the whole line
 Ctrl-r		Redo
 i		Insert before the current character
 I		Insert at the beginning of the line
@@ -33,8 +34,11 @@ o		Insert a new line after the current line
 O		Insert a new line before the current line
 x		Delete the current character 
 dw		Delete until the start of the next word
+d2w		Delete until the start of the second word forward
 de		Delete to the end of the current word
 d0 or d$	Delete to the end of the line
+dd		Delete the current line
+2dd		Delete two lines
 rx		Replace current character to x
 ce		Change to the end of the word
 
