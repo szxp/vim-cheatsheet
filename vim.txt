@@ -3,6 +3,10 @@ Exit
 :q      Exit
 :wq     Save changes and exit
 
+Modes
+ESC     Normal mode
+:       Command line mode
+
 Navigation
 h,j,k,l Move the cursor left, down, up, right
 2h      Move the cursor left two characters backward
@@ -71,7 +75,9 @@ c^      Change to the first non blank character in the line
                     in the whole file with a prompt
 :#,#s/old/new/g     Replace all occurrence of 'old' with 'new'
                     between two line, where #,# are the line numbers
-
+Command line mode
+:       Enter a Vim command
+:!      Execute an external shell command
 
 Info
 CTRL-G  Show location in file and status of the file
@@ -85,6 +91,9 @@ Config
 
 " Remap jump to tags shortcut
 :nnoremap <C-Ú> <C-]>
+
+" Show line numbers
+set number
 
 
 Troubleshouting
