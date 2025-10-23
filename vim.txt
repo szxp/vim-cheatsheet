@@ -1,59 +1,80 @@
 Exit
-:q!	Exit without saving changes
-:q	Exit
-:wq	Save changes and exit
+:q!     Exit without saving changes
+:q      Exit
+:wq     Save changes and exit
 
 Navigation
-h,j,k,l		Move the cursor left, down, up, right
-2h		Move the cursor left two backward
-3j		Move the cursor down three forward
-4k		Move the cursor up four backward
-5l		Move the cursor right five characters forward
-w		Beginning of the next word
-3w		Beginning of the third word forward
-b		Beginning of the word
-3b		Beginning of the third word backward
-e		End of the word before the last character
-3e		End of the third word forward before the last character
-0 		Beginning of the line
-^ or _		First non blank character in the line
-$		End of line
-gg		Jump to the beginning of the file
-G		Jump to the end of the file
-Ctrl-O		Jump backward
-Ctrl-I		Jump forward
+h,j,k,l Move the cursor left, down, up, right
+2h      Move the cursor left two characters backward
+3j or 3 Move the cursor down three lines forward
+4k      Move the cursor up four lines backward
+5l      Move the cursor right five characters forward
+gg      Jump to the beginning of the file
+G       Jump to the end of the file
+4G      Jump to line 4
+0       Beginning of the line
+^ or _  First non blank character in the line
+$       End of line
+CTRL-O  Jump backward
+CTRL-I  Jump forward
+w       Beginning of the next word
+3w      Beginning of the third word forward
+b       Beginning of the word
+3b      Beginning of the third word backward
+e       End of the word before the last character
+3e      End of the third word forward before the last character
 
 Editing
-u		Undo
-U		Undo the whole line
-Ctrl-R		Redo
-i		Insert before the current character
-I		Insert at the beginning of the line
-a		Append after the current character
-A		Append to the end of line
-o		Insert a new line after the current line
-O		Insert a new line before the current line
-x		Delete the current character 
-dw		Delete until the start of the next word
-d2w		Delete until the start of the second word forward
-daw		Delete the whole word and keeps trailing whitespaces
-diw		Delete the whole word, keeps trailing whitespaces
-de		Delete to the end of the current word
-d$		Delete the rest of the line
-d0		Delete to the end of the line
-d^		Delete to the first non blank character in the line
-dd		Delete the current line
-2dd		Delete two lines
-p		Put previously deleted text after the cursor
-rx		Replace current character to x
-ce or cw	Change to the end of the word, keeps trailing whitespaces
-caw		Change the whole word and trailing whitespaces
-ciw		Change the whole word, keeps trailing whitespaces
-cc		Change the whole line
-c$		Change the rest of the line
-c0		Change to the beginning of the line 
-c^		Change to the first non blank character in the line
+u       Undo
+U       Undo the whole line
+CTRL-R  Redo
+i       Insert before the current character
+I       Insert at the beginning of the line
+a       Append after the current character
+A       Append to the end of line
+o       Insert a new line after the current line
+O       Insert a new line before the current line
+x       Delete the current character 
+dw      Delete until the start of the next word
+d2w     Delete until the start of the second word forward
+daw     Delete the whole word and keeps trailing whitespaces
+diw     Delete the whole word, keeps trailing whitespaces
+de      Delete to the end of the current word
+d$      Delete the rest of the line
+d0      Delete to the end of the line
+d^      Delete to the first non blank character in the line
+dd      Delete the current line
+2dd     Delete two lines
+p       Put previously deleted text after the cursor
+rx      Replace current character to x
+ce      Change to the end of the word, keeps trailing whitespaces
+cw      Change to the end of the word, and trailing whitespaces
+caw     Change the whole word and trailing whitespaces
+ciw     Change the whole word, keeps trailing whitespaces
+cc      Change the whole line
+c$      Change the rest of the line
+c0      Change to the beginning of the line 
+c^      Change to the first non blank character in the line
+:%s/Ctrl/CTRL/g     Replace all occurence of 'Ctrl' with 'CTRL'
 
+Search
+/phrase     Search for 'phrase' forward
+?phrase     Search for 'phrase' backword
+n           Jump to next occurrence
+N           Jump to previous occurrence
+
+Info
+CTRL-G  Show location in file and status of the file
+
+
+Config
+" TABs
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+
+" Remap jump to tags shortcut
+:nnoremap <C-Ú> <C-]>
 
 
 Troubleshouting
