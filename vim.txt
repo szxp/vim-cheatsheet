@@ -23,6 +23,11 @@ b       Beginning of the word
 3b      Beginning of the third word backward
 e       End of the word before the last character
 3e      End of the third word forward before the last character
+/word   Search for 'phrase' forward
+?word   Search for 'phrase' backword
+n       Jump to next occurrence
+N       Jump to previous occurrence
+%       Jump to a matching parentheses
 
 Editing
 u       Undo
@@ -35,6 +40,7 @@ A       Append to the end of line
 o       Insert a new line after the current line
 O       Insert a new line before the current line
 x       Delete the current character 
+2x      Delete two characters
 dw      Delete until the start of the next word
 d2w     Delete until the start of the second word forward
 daw     Delete the whole word and keeps trailing whitespaces
@@ -55,13 +61,17 @@ cc      Change the whole line
 c$      Change the rest of the line
 c0      Change to the beginning of the line 
 c^      Change to the first non blank character in the line
-:%s/Ctrl/CTRL/g     Replace all occurence of 'Ctrl' with 'CTRL'
+:s/old/new          Replace the first occurrence of 'old' with 'new' 
+                    in the current line
+:s/old/new/g        Replace all occurrence of 'old' with 'new' 
+                    in the current line
+:%s/old/new/g       Replace all occurrence of 'old' with 'new'
+                    in the whole file
+:%s/old/new/gc      Replace all occurrence of 'old' with 'new'
+                    in the whole file with a prompt
+:#,#s/old/new/g     Replace all occurrence of 'old' with 'new'
+                    between two line, where #,# are the line numbers
 
-Search
-/phrase     Search for 'phrase' forward
-?phrase     Search for 'phrase' backword
-n           Jump to next occurrence
-N           Jump to previous occurrence
 
 Info
 CTRL-G  Show location in file and status of the file
