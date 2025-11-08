@@ -57,6 +57,7 @@ dd      Delete the current line
 2dd     Delete two lines
 p       Put previously deleted text after the cursor
 rx      Replace current character to x
+R       Replace more than one characters
 ce      Change to the end of the word, keeps trailing whitespaces
 cw      Change to the end of the word, and trailing whitespaces
 caw     Change the whole word and trailing whitespaces
