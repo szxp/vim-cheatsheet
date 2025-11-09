@@ -1,7 +1,9 @@
 Exit
 :q!     Exit without saving changes
 :q      Exit
-:wq     Save changes and exit
+:x      Write if modified and quit
+ZZ      Same as :x
+:wq     Write file even if not modified and quit
 
 Modes
 ESC     Normal mode
